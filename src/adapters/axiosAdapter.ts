@@ -3,11 +3,11 @@ import axios from 'axios'
 
 export class AxiosAdapter implements HTTPClient {
 
-  async get(url:string): Promise<void> {
+  async get(url:string): Promise<any> {
     return axios.get(url)
   }
 
-  async post(url:string, data:any): Promise<void> {
+  async post(url:string, data:any): Promise<any> {
 
     return axios.post(url,data)
   }
