@@ -6,7 +6,6 @@ Esse projeto foi desenvolvido para fazer uma request o crawler que busca dados e
 
 - Clone no github
 - Intalação do projeto
-- Adicionando api-keys
 - Build da aplicação
 
 # Clone no github
@@ -38,6 +37,15 @@ yarn build
 ```
 yarn start
 ```
+
+## acessando docs 
+Depois que o projeto estiver rodando você pode acessar a documentação pelo swagger, como no exemplo a baixo:
+
+````
+http://localhost:3333/api-docs/
+
+
+````
 
 ## Dev
 
