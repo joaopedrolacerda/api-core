@@ -1,12 +1,12 @@
 {
-  "name": "backend-desafio",
+  "name": "api-core",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "build": "babel src --extensions   \".ts, .tsx\" --out-dir dist --copy-files",
     "start": "node dist/server.js",
-    "dev:server": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
+    "dev": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
     "test": "jest"
   },
   "devDependencies": {
@@ -41,6 +41,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.21.0",
     "@types/socket.io": "^2.1.5",
     "axios": "^0.19.2",
     "cors": "^2.8.5",

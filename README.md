@@ -1,6 +1,6 @@
-# Find_HashTag
+# API_CORE
 
-Esse projeto foi desenvolvido para fazer a busca de uma determinada hashtag fazendo a integração com a api do twitter, Baixe o front-end em Reactjs através desse link: https://github.com/joaopedrolacerda/fron-end_findHashtag
+Esse projeto foi desenvolvido para fazer uma request o crawler que busca dados em um determinado portal
 
 # Passos
 
@@ -27,23 +27,6 @@ você pode fazer o Build tanto em versão de desenvolvimento quanto em versão d
 
 - As chaves podem ser encontradas no seguinte site: https://developer.twitter.com/en
 
-**Para que você possa utilizar essa api, é indispensável que você adicione suas chaves de api do twitter**
-
-- As chaves de api são variaveis de ambiente, que você poderá encontrar dentro de `./src/config/keys`
-
-fazendo esse caminho, você irá encontrar algo como isso
-
-```
-export default {
-  keys: {
-    CONSUMER_KEY: 'XXXXXXXXXXXXXXX',
-    CONSUMER_SECRET: 'XXXXXXXXXXXX',
-    ACCESS_TOKEN: 'XXXXXXXXXXXXXXXX',
-    ACCESS_TOKEN_SECRET: 'XXXXXXXXXXXXX',
-  },
-};
-```
-
 ## Build
 
 ```
@@ -61,5 +44,5 @@ yarn start
 - Também tem a opção de rodar o servidor em modo desenvolvimento
 
 ```
-yarn dev:server
+yarn dev
 ```
