@@ -1,0 +1,53 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API CORE ",
+    "description": "this is a simples api to call a web-crawler ",
+    "version": "0.1.0"
+  },
+  "servers":[
+    {
+      "url": "http://localhost:8888"
+    }
+  ],
+
+  "paths": {
+    "/getDataFromCrawler/": {
+      "post": {
+        "summary": "call web-crawler",
+        "description": "send data to get infos of web crawler",
+        
+       
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "auth": {
+                    "type": "object"
+                  }
+                },
+                "example": {
+                  "auth": {
+                    "username": "teste",
+                    "passWord": "teste"
+                  }, 
+                  "cpf": "123121"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "recovered"
+          },
+          "400": {
+            "description": "error"
+          }
+        }
+      }
+    }
+  }
+}

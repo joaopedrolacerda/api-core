@@ -21,7 +21,7 @@ export  class CallCrawller {
       return response.json(getPageData);
 
     } catch (error) {
-      return response.status(422).json({ error: error });
+      return response.status(422).json({  "error": error.message });
     }
   }
 }
