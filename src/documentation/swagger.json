@@ -30,8 +30,8 @@
                 },
                 "example": {
                   "auth": {
-                    "username": "teste",
-                    "passWord": "teste"
+                    "userName": "teste",
+                    "password": "teste"
                   }, 
                   "cpf": "123121"
                 }
@@ -41,7 +41,7 @@
         },
         "responses": {
           "200": {
-            "description": "recovered"
+            "description": "success"
           },
           "400": {
             "description": "error"
